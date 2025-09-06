@@ -82,7 +82,7 @@ function App() {
           <Services />
           <Technologies />
           <Insights />
-          <Careers />
+          {/* <Careers /> */}
           <Contact />
         </main>
         <Footer />

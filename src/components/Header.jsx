@@ -23,7 +23,7 @@ const navigationItems = [
   { label: 'About', section: 'about' },
   { label: 'What We Do', section: 'services' },
   { label: 'What We Think', section: 'insights' },
-  { label: 'Careers', section: 'careers' },
+  // { label: 'Careers', section: 'careers' },
   { label: 'Contact', section: 'contact' },
 ];
 
