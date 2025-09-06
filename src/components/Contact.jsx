@@ -49,15 +49,15 @@ const Contact = () => {
     {
       icon: <Phone />,
       title: 'Call Us',
-      details: '+1 (555) 123-4567',
+      details: '+91 9157877809',
       subtitle: 'Mon-Fri 9AM-6PM EST',
     },
-    {
-      icon: <LocationOn />,
-      title: 'Visit Us',
-      details: '123 Tech Street, Innovation District',
-      subtitle: 'New York, NY 10001',
-    },
+    // {
+    //   icon: <LocationOn />,
+    //   title: 'Visit Us',
+    //   details: '123 Tech Street, Innovation District',
+    //   subtitle: 'New York, NY 10001',
+    // },
     {
       icon: <Business />,
       title: 'Business Hours',

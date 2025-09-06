@@ -80,12 +80,12 @@ const Footer = () => {
               </Box>
               <Box sx={{ display: 'flex', alignItems: 'center', mb: 1 }}>
                 <Phone sx={{ mr: 1, fontSize: '1.2rem' }} />
-                <Typography variant="body2">+1 (555) 123-4567</Typography>
+                <Typography variant="body2">+91 91578 77809</Typography>
               </Box>
-              <Box sx={{ display: 'flex', alignItems: 'center' }}>
+              {/* <Box sx={{ display: 'flex', alignItems: 'center' }}>
                 <LocationOn sx={{ mr: 1, fontSize: '1.2rem' }} />
                 <Typography variant="body2">New York, NY 10001</Typography>
-              </Box>
+              </Box> */}
             </Box>
 
             <Box>
@@ -118,7 +118,6 @@ const Footer = () => {
               {services.map((service) => (
                 <Link
                   key={service}
-                  href="#"
                   color="inherit"
                   underline="none"
                   sx={{
@@ -144,7 +143,6 @@ const Footer = () => {
               {company.map((item) => (
                 <Link
                   key={item}
-                  href="#"
                   color="inherit"
                   underline="none"
                   sx={{
@@ -183,11 +181,11 @@ const Footer = () => {
               © {currentYear} AlphaWave Software. All rights reserved.
             </Typography>
           </Grid>
-          <Grid item>
+          {/* <Grid item>
             <Typography variant="body2" sx={{ opacity: 0.8 }}>
               Built with ❤️ using React & Material-UI
             </Typography>
-          </Grid>
+          </Grid> */}
         </Grid>
       </Container>
     </Box>

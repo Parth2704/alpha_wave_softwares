@@ -192,7 +192,7 @@ const Insights = () => {
                 </CardContent>
 
                 <CardActions sx={{ p: 2, pt: 0 }}>
-                  <Button
+                  {/* <Button
                     size="small"
                     sx={{
                       color: '#3b82f6',
@@ -202,7 +202,7 @@ const Insights = () => {
                     }}
                   >
                     Read More
-                  </Button>
+                  </Button> */}
                   <Box sx={{ ml: 'auto' }}>
                     <Typography variant="caption" color="text.secondary">
                       {insight.date}
@@ -214,7 +214,7 @@ const Insights = () => {
           ))}
         </Grid>
 
-        <Box sx={{ textAlign: 'center', mt: 6 }}>
+        {/* <Box sx={{ textAlign: 'center', mt: 6 }}>
           <Button
             variant="outlined"
             size="large"
@@ -231,7 +231,7 @@ const Insights = () => {
           >
             View All Insights
           </Button>
-        </Box>
+        </Box> */}
       </Container>
     </Box>
   );

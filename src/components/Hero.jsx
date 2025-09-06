@@ -74,7 +74,7 @@ const Hero = () => {
                   clients worldwide.
                 </Typography>
 
-                <Box sx={{ display: 'flex', gap: 2, flexWrap: 'wrap' }}>
+                {/* <Box sx={{ display: 'flex', gap: 2, flexWrap: 'wrap' }}>
                   <Button
                     variant="contained"
                     size="large"
@@ -104,7 +104,7 @@ const Hero = () => {
                   >
                     View Portfolio
                   </Button>
-                </Box>
+                </Box> */}
               </Box>
             </Fade>
           </Grid>

@@ -226,7 +226,7 @@ const Services = () => {
                   </Box>
                 </CardContent>
 
-                <CardActions sx={{ p: 2, pt: 0 }}>
+                {/* <CardActions sx={{ p: 2, pt: 0 }}>
                   <Button
                     variant="outlined"
                     fullWidth
@@ -241,7 +241,7 @@ const Services = () => {
                   >
                     Learn More
                   </Button>
-                </CardActions>
+                </CardActions> */}
               </Card>
             </Grid>
           ))}
