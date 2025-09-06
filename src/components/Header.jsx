@@ -79,7 +79,7 @@ const Header = () => {
             onClick={() => handleSectionClick('home')}
             style={{ cursor: 'pointer' }}
           >
-            AlphaWave Softwares
+            AlphaWave Software
           </Typography>
 
           {isMobile ? (

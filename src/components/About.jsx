@@ -67,7 +67,7 @@ const About = () => {
           sx={{ mb: 6, color: '#64748b', maxWidth: '800px', mx: 'auto' }}
         >
           Founded with a vision to bridge the gap between innovative technology and business success,
-          AlphaWave Softwares has been at the forefront of digital transformation.
+          AlphaWave Software has been at the forefront of digital transformation.
         </Typography>
 
         <Grid container spacing={4} sx={{ mb: 6 }}>

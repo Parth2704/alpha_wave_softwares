@@ -65,7 +65,7 @@ const Footer = () => {
             <Box sx={{ display: 'flex', alignItems: 'center', mb: 2 }}>
               <Code sx={{ mr: 1, fontSize: '2rem' }} />
               <Typography variant="h5" sx={{ fontWeight: 'bold' }}>
-                AlphaWave Softwares
+                AlphaWave Software
               </Typography>
             </Box>
             <Typography variant="body1" sx={{ mb: 3, opacity: 0.9, lineHeight: 1.8 }}>
@@ -76,7 +76,7 @@ const Footer = () => {
             <Box sx={{ mb: 2 }}>
               <Box sx={{ display: 'flex', alignItems: 'center', mb: 1 }}>
                 <Email sx={{ mr: 1, fontSize: '1.2rem' }} />
-                <Typography variant="body2">info@alphawavesoftwares.com</Typography>
+                <Typography variant="body2">info@alphawavesoftware.com</Typography>
               </Box>
               <Box sx={{ display: 'flex', alignItems: 'center', mb: 1 }}>
                 <Phone sx={{ mr: 1, fontSize: '1.2rem' }} />
@@ -180,7 +180,7 @@ const Footer = () => {
         <Grid container justifyContent="space-between" alignItems="center">
           <Grid item>
             <Typography variant="body2" sx={{ opacity: 0.8 }}>
-              © {currentYear} AlphaWave Softwares. All rights reserved.
+              © {currentYear} AlphaWave Software. All rights reserved.
             </Typography>
           </Grid>
           <Grid item>

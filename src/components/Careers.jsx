@@ -103,7 +103,7 @@ const Careers = () => {
           sx={{ mb: 6, color: '#64748b', maxWidth: '800px', mx: 'auto' }}
         >
           We're always looking for talented individuals who share our passion for technology
-          and innovation. Explore exciting career opportunities with AlphaWave Softwares.
+          and innovation. Explore exciting career opportunities with AlphaWave Software.
         </Typography>
 
         <Alert

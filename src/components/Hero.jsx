@@ -69,7 +69,7 @@ const Hero = () => {
                     lineHeight: 1.6,
                   }}
                 >
-                  At AlphaWave Softwares, we craft innovative software solutions
+                  At AlphaWave Software, we craft innovative software solutions
                   that drive business growth and digital transformation for our
                   clients worldwide.
                 </Typography>
