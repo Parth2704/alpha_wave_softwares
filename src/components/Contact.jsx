@@ -78,7 +78,7 @@ const Contact = () => {
     {
       icon: <Email />,
       title: 'Email Us',
-      details: 'info@alphawavesoftware.com',
+      details: 'info.alphawavesoftware@gmail.com',
       subtitle: 'We reply within 24 hours',
     },
     {

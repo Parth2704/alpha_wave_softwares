@@ -77,7 +77,7 @@ const Footer = () => {
             <Box sx={{ mb: 2 }}>
               <Box sx={{ display: 'flex', alignItems: 'center', mb: 1 }}>
                 <Email sx={{ mr: 1, fontSize: '1.2rem' }} />
-                <Typography variant="body2">info@alphawavesoftware.com</Typography>
+                <Typography variant="body2">info.alphawavesoftware@gmail.com</Typography>
               </Box>
               <Box sx={{ display: 'flex', alignItems: 'center', mb: 1 }}>
                 <Phone sx={{ mr: 1, fontSize: '1.2rem' }} />
