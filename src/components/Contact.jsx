@@ -25,6 +25,7 @@ import { useAppDispatch } from '../hooks/useAppDispatch';
 import { useAppSelector } from '../hooks/useAppSelector';
 import { submitContactForm } from '../store/slices/contactSlice';
 import { showSnackbar } from '../store/slices/uiSlice';
+import emailjs from "emailjs-com";
 
 const Contact = () => {
   const dispatch = useAppDispatch();
@@ -38,6 +39,40 @@ const Contact = () => {
     subject: '',
     message: '',
   });
+
+
+  const sendMail = async () => {
+    try {
+      const result = await emailjs.send(
+        "service_x98ohhv",
+        "template_02kf88b",
+        contactForm,
+        "bV8Rrkbd50nlxLGi5"
+      );
+
+      console.log("✅ Email sent!", result.text);
+      dispatch(showSnackbar({
+        message: "Message sent successfully! We'll get back to you soon.",
+        severity: 'success'
+      }));
+
+      // Reset form
+      setContactForm({
+        name: '',
+        email: '',
+        phone: '',
+        company: '',
+        subject: '',
+        message: '',
+      });
+    } catch (error) {
+      console.error("❌ Error sending email:", error.text);
+      dispatch(showSnackbar({
+        message: 'Failed to send message. Please try again.',
+        severity: 'error'
+      }));
+    }
+  };
 
   const contactInfo = [
     {
@@ -81,7 +116,7 @@ const Contact = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    
+
     if (!contactForm.name || !contactForm.email || !contactForm.message) {
       dispatch(showSnackbar({
         message: 'Please fill in all required fields',
@@ -90,26 +125,7 @@ const Contact = () => {
       return;
     }
 
-    try {
-      await dispatch(submitContactForm(contactForm)).unwrap();
-      dispatch(showSnackbar({
-        message: "Message sent successfully! We'll get back to you soon.",
-        severity: 'success'
-      }));
-      setContactForm({
-        name: '',
-        email: '',
-        phone: '',
-        company: '',
-        subject: '',
-        message: '',
-      });
-    } catch (error) {
-      dispatch(showSnackbar({
-        message: 'Failed to send message. Please try again.',
-        severity: 'error'
-      }));
-    }
+    await sendMail();
   };
 
   return (
@@ -135,7 +151,7 @@ const Contact = () => {
 
         <Grid container spacing={6}>
           {/* Contact Information */}
-          <Grid item size={{xs:12, lg:4}}>
+          <Grid item size={{ xs: 12, lg: 4 }}>
             <Typography
               variant="h5"
               gutterBottom
@@ -143,10 +159,10 @@ const Contact = () => {
             >
               Contact Information
             </Typography>
-            
+
             <Grid container spacing={3}>
               {contactInfo.map((info, index) => (
-                <Grid item size={{xs:12,sm:6, lg:12}} key={index}>
+                <Grid item size={{ xs: 12, sm: 6, lg: 12 }} key={index}>
                   <Card
                     sx={{
                       transition: 'transform 0.3s ease',
@@ -195,7 +211,7 @@ const Contact = () => {
           </Grid>
 
           {/* Contact Form */}
-          <Grid item size={{xs:12, lg:8}}>
+          <Grid item size={{ xs: 12, lg: 8 }}>
             <Paper elevation={2} sx={{ p: 4, borderRadius: 2 }}>
               <Typography
                 variant="h5"
@@ -207,7 +223,7 @@ const Contact = () => {
 
               <form onSubmit={handleSubmit}>
                 <Grid container spacing={3}>
-                  <Grid item size={{xs:12, sm:6}}>
+                  <Grid item size={{ xs: 12, sm: 6 }}>
                     <TextField
                       fullWidth
                       label="Full Name"
@@ -216,7 +232,7 @@ const Contact = () => {
                       onChange={handleInputChange('name')}
                     />
                   </Grid>
-                  <Grid item size={{xs:12, sm:6}}>
+                  <Grid item size={{ xs: 12, sm: 6 }}>
                     <TextField
                       fullWidth
                       label="Email"
@@ -226,7 +242,7 @@ const Contact = () => {
                       onChange={handleInputChange('email')}
                     />
                   </Grid>
-                  <Grid item size={{xs:12, sm:6}}>
+                  <Grid item size={{ xs: 12, sm: 6 }}>
                     <TextField
                       fullWidth
                       label="Phone Number"
@@ -234,7 +250,7 @@ const Contact = () => {
                       onChange={handleInputChange('phone')}
                     />
                   </Grid>
-                  <Grid item size={{xs:12, sm:6}}>
+                  <Grid item size={{ xs: 12, sm: 6 }}>
                     <TextField
                       fullWidth
                       label="Company"
@@ -242,7 +258,7 @@ const Contact = () => {
                       onChange={handleInputChange('company')}
                     />
                   </Grid>
-                  <Grid item size={{xs:12}}>
+                  <Grid item size={{ xs: 12 }}>
                     <FormControl fullWidth>
                       <InputLabel>Subject</InputLabel>
                       <Select
@@ -260,7 +276,7 @@ const Contact = () => {
                       </Select>
                     </FormControl>
                   </Grid>
-                  <Grid item size={{xs:12}}>
+                  <Grid item size={{ xs: 12 }}>
                     <TextField
                       fullWidth
                       label="Message"
@@ -272,7 +288,7 @@ const Contact = () => {
                       onChange={handleInputChange('message')}
                     />
                   </Grid>
-                  <Grid item size={{xs:12}}>
+                  <Grid item size={{ xs: 12 }}>
                     <Button
                       type="submit"
                       variant="contained"
