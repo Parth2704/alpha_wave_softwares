@@ -7,6 +7,7 @@ import {
   Link,
   IconButton,
   Divider,
+  ListItem,
 } from '@mui/material';
 import {
   Facebook,
@@ -116,20 +117,21 @@ const Footer = () => {
             </Typography>
             <Box>
               {services.map((service) => (
-                <Link
+                <ListItem
                   key={service}
                   color="inherit"
                   underline="none"
                   sx={{
                     display: 'block',
                     mb: 1,
+                    padding:0,
                     opacity: 0.8,
                     transition: 'opacity 0.3s ease',
                     '&:hover': { opacity: 1 },
                   }}
                 >
                   <Typography variant="body2">{service}</Typography>
-                </Link>
+                </ListItem>
               ))}
             </Box>
           </Grid>
@@ -141,20 +143,21 @@ const Footer = () => {
             </Typography>
             <Box>
               {company.map((item) => (
-                <Link
+                <ListItem
                   key={item}
                   color="inherit"
                   underline="none"
                   sx={{
                     display: 'block',
                     mb: 1,
+                    padding:0,
                     opacity: 0.8,
                     transition: 'opacity 0.3s ease',
                     '&:hover': { opacity: 1 },
                   }}
                 >
                   <Typography variant="body2">{item}</Typography>
-                </Link>
+                </ListItem>
               ))}
             </Box>
           </Grid>
