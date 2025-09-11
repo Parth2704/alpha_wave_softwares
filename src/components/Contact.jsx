@@ -85,7 +85,7 @@ const Contact = () => {
       icon: <Phone />,
       title: 'Call Us',
       details: '+91 9157877809',
-      subtitle: 'Mon-Fri 9AM-6PM EST',
+      subtitle: 'Mon-Fri 9 AM - 6 PM',
     },
     // {
     //   icon: <LocationOn />,
