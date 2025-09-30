@@ -169,7 +169,7 @@ const Insights = () => {
                     {insight.excerpt}
                   </Typography>
 
-                  <Box
+                  {/* <Box
                     sx={{
                       display: 'flex',
                       alignItems: 'center',
@@ -188,7 +188,7 @@ const Insights = () => {
                         {insight.readTime}
                       </Typography>
                     </Box>
-                  </Box>
+                  </Box> */}
                 </CardContent>
 
                 <CardActions sx={{ p: 2, pt: 0 }}>
@@ -203,11 +203,11 @@ const Insights = () => {
                   >
                     Read More
                   </Button> */}
-                  <Box sx={{ ml: 'auto' }}>
+                  {/* <Box sx={{ ml: 'auto' }}>
                     <Typography variant="caption" color="text.secondary">
                       {insight.date}
                     </Typography>
-                  </Box>
+                  </Box> */}
                 </CardActions>
               </Card>
             </Grid>

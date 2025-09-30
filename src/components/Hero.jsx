@@ -13,10 +13,10 @@ import { TrendingUp, People, Code, CloudDone } from '@mui/icons-material';
 
 const Hero = () => {
   const stats = [
-    { icon: <People />, number: '50+', label: 'Happy Clients' },
-    { icon: <Code />, number: '200+', label: 'Projects Delivered' },
-    { icon: <TrendingUp />, number: '5+', label: 'Years Experience' },
-    { icon: <CloudDone />, number: '99%', label: 'Success Rate' },
+    { icon: <People />, number: '5+', label: 'Happy Clients' },
+    { icon: <Code />, number: '20+', label: 'Projects Delivered' },
+    { icon: <TrendingUp />, number: '1+', label: 'Years Experience' },
+    { icon: <CloudDone />, number: '100%', label: 'Success Rate' },
   ];
 
   return (

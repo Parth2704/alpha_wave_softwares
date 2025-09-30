@@ -87,12 +87,12 @@ const Contact = () => {
       details: '+91 9157877809',
       subtitle: 'Mon-Fri 9 AM - 6 PM',
     },
-    // {
-    //   icon: <LocationOn />,
-    //   title: 'Visit Us',
-    //   details: '123 Tech Street, Innovation District',
-    //   subtitle: 'New York, NY 10001',
-    // },
+    {
+      icon: <LocationOn />,
+      title: 'Visit Us',
+      details: '604, KBC 1, Khushbu Circle, Yamuna Chowk, near RIO Business Hub, Mota Varachha',
+      subtitle: 'Surat, Gujarat 394101',
+    },
     {
       icon: <Business />,
       title: 'Business Hours',
